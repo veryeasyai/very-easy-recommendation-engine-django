@@ -50,3 +50,4 @@ class VeryEasyRecommendationEngine:
 
     def get_data(self):
         objects = self.model.objects.all()
+        return objects.values()
