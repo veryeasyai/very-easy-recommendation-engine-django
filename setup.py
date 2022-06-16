@@ -3,14 +3,24 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+REQUIRES = [
+  "django>=2.2",
+]
+
+VERSION = "0.0.2"
+URL = "https://veryeasyai.com/"
+
 setuptools.setup(
     name="very_easy_recommendation_engine",
-    version="0.0.1",
+    version=VERSION,
     author="veryeasyai",
+    url=URL,
     description="A Very Easy Recommendation Engine for Django",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
+    keywords="django, AI, veryeasyai",
+    license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -19,5 +29,5 @@ setuptools.setup(
     python_requires='>=3.6',
     py_modules=["very_easy_recommendation_engine"],
     package_dir={'':'very_easy_recommendation_engine'},
-    install_requires=[]
+    install_requires=REQUIRES
 )
