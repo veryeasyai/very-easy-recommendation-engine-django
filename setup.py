@@ -19,7 +19,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
-    keywords="django, AI, veryeasyai",
+    keywords="django, AI, artificial-intelligence, veryeasyai, machine-learning, neural-networks, recommendation-systems",
     license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3",
